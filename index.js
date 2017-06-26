@@ -8,7 +8,7 @@ let inOrder = currentNode => {
   }
 }
 
-function findOrAdd(currentNode, newNode){
+let findOrAdd = (currentNode, newNode) => {
   if(currentNode.data == newNode.data){
     return true
   }
@@ -29,7 +29,7 @@ function findOrAdd(currentNode, newNode){
   }
 }
 
-function max(node){
+let max = node => {
   if(node.right){
     return max(node.right)
   }else{
@@ -37,7 +37,7 @@ function max(node){
   }
 }
 
-function min(node){
+let min = node => {
   if(node.left){
     return min(node.left)
   }else{
